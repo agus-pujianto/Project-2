@@ -32,14 +32,14 @@ C. sebelum menjalankan program dbt keluar dari dir env menuju dir folder project
 >> cd .\dbt_project2_t1\ 
 ``` 
 
-~jika menggunakan docker~
+- jika menggunakan docker -
 ```
 build the postgres image
 1. docker build -t {postgres_image_name} -f Dockerfile.postgres .
 2. masuk ke >>  docker build -t dbt_project2 -f Dockerfile.postgres .
 ```
 
-~run postgres container~
+- run postgres container -
 if you want to check the result on local (uncomment first the EXPOSE command on dockerfile postgres)
 ```
 docker run -d -p 5432:5432 --name {postgres_container_name} {postgres_image_name}
